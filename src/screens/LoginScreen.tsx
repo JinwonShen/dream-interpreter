@@ -1,14 +1,21 @@
 import React from "react";
-import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { Image, SafeAreaView, StyleSheet, Text, View } from "react-native";
 
 export default function LoginScreen() {
   return (
     <SafeAreaView style={styles.container}>
+      {/* 로고 영역 */}
       <View style={styles.logoContainer}>
-        <View style={styles.logoIcon}>
-          <Text>로고</Text>
-        </View>
+        <Image
+          source={require('../../assets/Images/heamong-logo.png')}
+          style={styles.logoImage}
+          resizeMode="contain"
+        ></Image>
         <Text style={styles.logoText}>heamong.ai</Text>
+      </View>
+
+      <View>
+        <h1>dd</h1>
       </View>
     </SafeAreaView>
   )
@@ -20,12 +27,18 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   logoContainer: {
-    
+    alignItems: "center",
+    marginBottom: 40,
   },
-  logoIcon: {
-
+  logoImage: {
+    width: 72,
+    height: 72,
+    marginBottom: 16,
   },
   logoText: {
-    
+    fontSize: 36,
+    fontWeight: 'bold',
+    color: '#A539FF',
+    fontFamily: 'Lexend-Bold',
   }
 })
