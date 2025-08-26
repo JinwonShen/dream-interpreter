@@ -66,42 +66,49 @@ export const fontSize = {
 export const fontFamily = {
   // 영문 폰트
   lexend: {
-    regular: 'Lexend',
-    medium: 'Lexend-Medium',
-    semibold: 'Lexend-SemiBold',
-    bold: 'Lexend-Bold',
+    regular: "Lexend",
+    medium: "Lexend-Medium",
+    semibold: "Lexend-SemiBold",
+    bold: "Lexend-Bold",
   },
   // 한글 폰트
   ibmPlex: {
-    regular: 'IBMPlexSansKR-Regular',
-    medium: 'IBMPlexSansKR-Medium',
-    semibold: 'IBMPlexSansKR-SemiBold',
-    bold: 'IBMPlexSansKR-Bold',
+    regular: "IBMPlexSansKR-Regular",
+    medium: "IBMPlexSansKR-Medium",
+    semibold: "IBMPlexSansKR-SemiBold",
+    bold: "IBMPlexSansKR-Bold",
   },
 };
 
 // 공통 컴포넌트 스타일링
-
 export const commonStyles = {
   // 컨테이너 스타일
   container: {
     flex: 1,
-    backgroundColor: colors.background
+    backgroundColor: colors.background,
+  },
+
+  // 컨테이너 센터
+  centerContainer: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
   },
 
   // Input
   inputField: {
-    borderWidth: 1,
-    borderColor: colors.border,
     paddingHorizontal: spacing.sm,
     paddingVertical: spacing.sm,
     backgroundColor: colors.backgroundF5,
+    borderWidth: 1,
+    borderRadius: 2,
+    borderColor: colors.border,
+    fontFamily: fontFamily.ibmPlex.regular,
     color: colors.gray400,
   },
 
   // Button
   buttonLg: {
-    width: '100%',
     paddingVertical: spacing.sm,
     borderRadius: 4,
     fontSize: fontSize.xs,
