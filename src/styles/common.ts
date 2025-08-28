@@ -35,6 +35,8 @@ export const colors = {
   warning: '#F59E0B',      // 경고 (노란색)
   error: '#EF4444',        // 에러 (빨간색)
   info: '#3B82F6',         // 정보 (파란색)
+
+  white: "#FFFFFF",
 }
 
 // 간격 시스템
@@ -101,7 +103,7 @@ export const commonStyles = {
     paddingVertical: spacing.sm,
     backgroundColor: colors.backgroundF5,
     borderWidth: 1,
-    borderRadius: 2,
+    borderRadius: 4,
     borderColor: colors.border,
     fontFamily: fontFamily.ibmPlex.regular,
     color: colors.gray400,
